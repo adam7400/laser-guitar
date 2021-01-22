@@ -1,1 +1,1 @@
-# laser-guitar
+# Laser Guitar
