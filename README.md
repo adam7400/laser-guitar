@@ -12,12 +12,6 @@ This purpose of this real time project is the construction of a simple electroni
 	</li>
 	<li>
 		 <a href="## Project Aim and Objectives ">Project Aim and Objectives</a> 
-			
-			<ul>
-       			 <li><a href="### Project Aim">Project Aim</a></li>
-       			 <li><a href="### Project Objectives">Project Objectives</a></li>
-			</ul>
-	</li>
 	<li> 
 		<a href="## Contributing to the project ">Contributing to the project</a>   
 	</li>
