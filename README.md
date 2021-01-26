@@ -2,7 +2,6 @@
 
 ## Project Description 
 
-
 This purpose of this real time project is the construction of a simple electronic harp, where lasers will be used to simulate harp strings and pre-defined chords or notes corresponding to the appropriate strings will be played through a USB speaker. The project will be undertaken in the C++ programming language and will use hardware such as a Raspberry Pi. 
 
 
