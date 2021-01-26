@@ -38,6 +38,9 @@ Hardware:
 	<li> 
 		<a href="## Contact Us">Contact Us </a>   
 	</li>
+	<li> 
+		<a href="## License ">License </a>   
+	</li>
   </ol>
 
 ## Project Aim and Objectives
@@ -91,3 +94,7 @@ Email -
 Youtube - 
 Facebook - 
 LinkedIn - 
+
+## License 
+
+This project will operate under the terms of GNU General Public License v3.0 . Please refer to the LICENSE.md file in the repository for further information.
