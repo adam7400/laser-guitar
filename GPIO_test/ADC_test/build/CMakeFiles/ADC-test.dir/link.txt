@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ADC-test.dir/main.cpp.o -o ADC-test   -L/usr/include  -Wl,-rpath,/usr/include -lwiringPi 
