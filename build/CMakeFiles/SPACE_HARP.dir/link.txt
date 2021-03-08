@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SPACE_HARP.dir/main.cpp.o -o SPACE_HARP   -L/usr/include  -Wl,-rpath,/usr/include -lwiringPi -lpthread 
