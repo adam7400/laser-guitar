@@ -10,3 +10,4 @@ target_link_libraries(SPACE_HARP wiringPi)
 
 find_package (Threads)
 target_link_libraries (SPACE_HARP ${CMAKE_THREAD_LIBS_INIT})
+

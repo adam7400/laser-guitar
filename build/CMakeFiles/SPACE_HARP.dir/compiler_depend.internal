@@ -198,4 +198,6 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o
  /usr/include/c++/8/backward/auto_ptr.h
  /usr/include/wiringPi.h
  /usr/include/mcp3004.h
+ /home/pi/Projects/space-harp/SoundThread.h
+ /home/pi/Projects/space-harp/CppThread.h
 
