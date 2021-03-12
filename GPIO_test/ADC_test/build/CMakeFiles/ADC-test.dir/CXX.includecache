@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Projects/space-harp/GPIO_test/ADC_test/main.cpp
+wiringPi.h
+-
+mcp3004.h
+-
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+

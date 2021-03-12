@@ -26,7 +26,7 @@ while(1){
 					
 	cout<<"Voltage:  "<<k*(float)(x)<<"V"<<endl; // Print voltage
 	
-	delay(2000);
+	delay(200);
 }
 	return 0;
 }
