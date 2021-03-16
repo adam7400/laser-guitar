@@ -27,8 +27,8 @@ while(1){
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	
 	// Use aplay function that is built into raspbain for audio
-	  wget https://github.com/adam7400/space-harp/tree/main/Version%201%20Single%20String/Sound%20Libary%20(WAV%20files)/samples_a.wav
-	  aplay a.wav 
+	  wget https://github.com/adam7400/space-harp/tree/main/Version%201%20Single%20String/Sound%20Libary%20(WAV%20files)/samples_a.wav // wget collects file from GitHub 
+	  aplay a.wav // .WAV file is played using sampling rate of 8kHz *** THIS IS AN ISSUE ***
 
 	} else {
 	  cout<<"\nDigital signal: "<<x<<endl;
@@ -38,7 +38,7 @@ while(1){
 					
 	cout<<"Voltage:  "<<k*(float)(x)<<"V"<<endl; // Print voltage
 	
-	delay(200); // Delay required to print signal
+	// Delay removed so that response of digital signal is essentially the response of the photoresistor
 }
 	return 0;
 
