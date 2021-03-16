@@ -25,8 +25,11 @@ while(1){
 // if statement to monitor digital signal 	
 	if (x < 500) { 
 	  cout<<"\nDigital signal: "<<x<<endl;  
+	
+	// Use aplay function that is built into raspbain for audio
 	  wget https://github.com/adam7400/space-harp/tree/main/Version%201%20Single%20String/Sound%20Libary%20(WAV%20files)/samples_a.wav
 	  aplay a.wav 
+
 	} else {
 	  cout<<"\nDigital signal: "<<x<<endl;
 	}
