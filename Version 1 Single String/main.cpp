@@ -15,6 +15,7 @@ int x,i;	// Digital signal
 float v;	// Voltage (V)
 float k = 3.3/1024; //ADC resolution
 
+
 // SPI setup
   wiringPiSetup() ;
   mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channels
@@ -23,7 +24,7 @@ while(1){
 	x = analogRead (MY_PIN); 	// Read value from CH0 on ADC
 
 // if statement to monitor digital signal 	
-	if (x < 500) { 
+	if (x < 500) {  				// 500 value may change depending on final resistor selected, currently 30k resistor
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	
 	// Use aplay function that is built into raspbain for audio
