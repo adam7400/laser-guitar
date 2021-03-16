@@ -21,7 +21,8 @@ float k = 3.3/1024; //ADC resolution
 
 while(1){
 	x = analogRead (MY_PIN); 	// Read value from CH0 on ADC
-	
+
+// if statement to monitor digital signal 	
 	if (x < 500) { 
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	  wget https://github.com/adam7400/space-harp/tree/main/Version%201%20Single%20String/Sound%20Libary%20(WAV%20files)/samples_a.wav
@@ -34,7 +35,7 @@ while(1){
 					
 	cout<<"Voltage:  "<<k*(float)(x)<<"V"<<endl; // Print voltage
 	
-	delay(200); 
+	delay(200); // Delay required to print signal
 }
 	return 0;
 
