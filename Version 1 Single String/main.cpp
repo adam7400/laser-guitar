@@ -9,6 +9,10 @@ using namespace std;
 #define SPI_CHAN 0
 #define MY_PIN 12345
 
+
+// *** Potentially have to call all required sound files at the start of main using wget so that all files are available when digital signal is interrupted***
+// Then use aplay when required further down the main.cpp (Sampling Rates using aplay ~r 48000 Hz a.wav will need to be looked at so audio can be played from audio jack)
+
 int main(void)
 {
 int x,i;	// Digital signal
