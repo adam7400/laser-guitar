@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
+#include <audio.h>
+#include <asoundlib.h>
+
 using namespace std;
 
 // SPI setup
