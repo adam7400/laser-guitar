@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/singleString.dir/main.cpp.o -o singleString   -L/usr/include  -L/usr/include/linux/dvb  -Wl,-rpath,/usr/include:/usr/include/linux/dvb -lwiringPi -laudio 
