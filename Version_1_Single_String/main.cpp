@@ -32,7 +32,6 @@ while(1){
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	
 	// Use aplay function that is built into raspbain for audio
-	  wget https://github.com/adam7400/space-harp/tree/main/Version%201%20Single%20String/Sound%20Libary%20(WAV%20files)/samples_a.wav // wget collects file from GitHub 
 	  aplay a.wav // .WAV file is played using sampling rate of 8kHz *** THIS IS AN ISSUE ***
 
 	} else {
