@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#include <audio.h>
-#include <asoundlib.h>
+#include <audio.h> // Include this lib for playwav()
+
 
 using namespace std;
 
@@ -34,8 +34,12 @@ while(1){
 	if (x < 500) {  				// 500 value may change depending on final resistor selected, currently 30k resistor
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	
-	// Use aplay function that is built into raspbain for audio
-	  aplay a.wav // .WAV file is played using sampling rate of 8kHz *** THIS IS AN ISSUE ***
+	// Use playwav function to play audio
+	
+	pFile = fopen ("samples_a.wav");
+	playwav(pFile)
+	fclose(pFile)
+	  // aplay a.wav // .WAV file is played using sampling rate of 8kHz *** THIS IS AN ISSUE ***
 
 	} else {
 	  cout<<"\nDigital signal: "<<x<<endl;
