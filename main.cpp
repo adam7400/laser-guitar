@@ -28,8 +28,6 @@ void SoundThread::run() {
 	if (DS < threshold)
 		if (tone==1)
 	system(a);
-		else
-	system(b);
 	}
 
 
@@ -46,8 +44,15 @@ int main (int argc, const char* argv[])
 	
 
 // Arbitrary threshold values. These will be based on chosen resistors in the phototransistor circuit.
-th1 = 300;
-th2 = 500;
+th1 = 900;
+//th2 = 500;
+
+
+// SPI setup
+  	wiringPiSetup() ;
+  	mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channels
+
+
 
 while (1)
 {
@@ -56,31 +61,24 @@ while (1)
 
 
 
-std::cout << "Insert the value for the Digital Signal 1. Threshold = "<<th1<<std::endl;
-std::cin >> x1;
-std::cout << "Insert the value for the Digital Signal 2. Threshold = "<<th2<<std::endl;
-std::cin >> x2;
-
+// Read the digitalvalue from the ADC pin
+	x1 = analogRead (MY_PIN);
+	
 SoundThread string1(th1, x1, 1);
-SoundThread string2(th2, x2, 2);
+//SoundThread string2(th2, x2, 2);
 string1.start();
-string2.start();
+//string2.start();
 string1.join();
-string2.join();
+//string2.join();
 
 }
 
 
 
 
-// SPI setup
-/*  	wiringPiSetup() ;
-  	mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channels
-*/
-// Read the digitalvalue from the ADC pin
-//	x = analogRead (MY_PIN);
-// Write the value on the screen
-//	std::cout << "Digital signal:" << x << std::endl;
+
+
+
 
 
 
