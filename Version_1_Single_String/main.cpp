@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-#include <audio.h> // Include this lib for playwav()
-
 
 using namespace std;
 
@@ -34,12 +32,7 @@ while(1){
 	if (x < 500) {  				// 500 value may change depending on final resistor selected, currently 30k resistor
 	  cout<<"\nDigital signal: "<<x<<endl;  
 	
-	// Use playwav function to play audio
-	
-	pFile = fopen ("samples_a.wav");
-	playwav(pFile)
-	fclose(pFile)
-	  // aplay a.wav // .WAV file is played using sampling rate of 8kHz *** THIS IS AN ISSUE ***
+	system("aplay samples_a.wav");
 
 	} else {
 	  cout<<"\nDigital signal: "<<x<<endl;
@@ -52,4 +45,4 @@ while(1){
 	// Delay removed so that response of digital signal is essentially the response of the photoresistor
 }
 	return 0;
-
+} 

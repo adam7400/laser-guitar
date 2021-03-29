@@ -198,8 +198,14 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: ../main.cpp \
   /usr/include/wiringPi.h \
   /usr/include/mcp3004.h \
   ../SoundThread.h \
-  ../CppThread.h
+  ../CppThread.h \
+  /usr/include/string.h \
+  /usr/include/strings.h
 
+
+/usr/include/strings.h:
+
+/usr/include/string.h:
 
 ../SoundThread.h:
 

@@ -200,4 +200,6 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o
  /usr/include/mcp3004.h
  /home/pi/Projects/space-harp/SoundThread.h
  /home/pi/Projects/space-harp/CppThread.h
+ /usr/include/string.h
+ /usr/include/strings.h
 

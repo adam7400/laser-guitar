@@ -4,6 +4,8 @@
 #include <wiringPi.h>
 #include <mcp3004.h>
 #include "SoundThread.h"
+#include <cstdlib>
+#include <string.h>
 
 
 
@@ -16,9 +18,18 @@
 void SoundThread::run() {
 
 // If the laser beam is broken and digital signal falls below threshold, then play the sound
+	
+	char a[100];
+	char b[100];
+	strcpy(a,"aplay samples_a.wav");
+	strcpy(b,"aplay samples_b.wav");
+
 
 	if (DS < threshold)
-		std::cout << "PLAY SOUND!" << std::endl;
+		if (tone==1)
+	system(a);
+		else
+	system(b);
 	}
 
 
@@ -32,6 +43,7 @@ int main (int argc, const char* argv[])
 	int x2;
 	int th1;		// digital signal threshold
 	int th2;
+	
 
 // Arbitrary threshold values. These will be based on chosen resistors in the phototransistor circuit.
 th1 = 300;
@@ -41,11 +53,16 @@ while (1)
 {
 
 // User input for digital signal - should be replaced by ADC readings
+
+
+
+std::cout << "Insert the value for the Digital Signal 1. Threshold = "<<th1<<std::endl;
 std::cin >> x1;
+std::cout << "Insert the value for the Digital Signal 2. Threshold = "<<th2<<std::endl;
 std::cin >> x2;
 
-SoundThread string1(th1, x1);
-SoundThread string2(th2, x2);
+SoundThread string1(th1, x1, 1);
+SoundThread string2(th2, x2, 2);
 string1.start();
 string2.start();
 string1.join();

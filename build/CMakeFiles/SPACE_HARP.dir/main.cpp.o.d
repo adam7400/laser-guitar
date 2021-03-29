@@ -157,4 +157,5 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: \
  /usr/include/c++/8/bits/atomic_lockfree_defines.h \
  /usr/include/c++/8/backward/auto_ptr.h /usr/include/wiringPi.h \
  /usr/include/mcp3004.h /home/pi/Projects/space-harp/SoundThread.h \
- /home/pi/Projects/space-harp/CppThread.h
+ /home/pi/Projects/space-harp/CppThread.h /usr/include/string.h \
+ /usr/include/strings.h

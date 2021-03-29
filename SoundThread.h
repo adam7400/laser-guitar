@@ -8,9 +8,10 @@ class SoundThread : public CppThread {
 
 
 public:
-	SoundThread(int _threshold, int _DS) {
+	SoundThread(int _threshold, int _DS, int _tone) {
 		threshold = _threshold;
 		DS = _DS;
+		tone = _tone;
 	}
 
 private:
@@ -20,6 +21,7 @@ private:
 private: 
 	int threshold;
 	int DS;
+	int tone;
 };
 
 
