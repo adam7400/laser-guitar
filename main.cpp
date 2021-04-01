@@ -89,24 +89,12 @@ std::cin>> chord;
 
 
 if (chord == 1) { 
-/* current.E = Ami.E;
-current.B = Ami.B;
-current.G = Ami.G;
-current.D = Ami.D;
-current.A = Ami.A; */
-current.e = Ami.e;
+current = Ami;
 } 
 
 else if (chord == 2) { 
-
-/* current.E = A.E;
-current.B = A.B;
-current.G = A.G;
-current.D = A.D;
-current.A = A.A; */
-current.e = A.e;
+current = A;
 } 
-
 
 
 while (1)
