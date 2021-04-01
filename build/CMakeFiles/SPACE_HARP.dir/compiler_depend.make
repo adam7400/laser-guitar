@@ -197,8 +197,6 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/8/backward/auto_ptr.h \
   /usr/include/wiringPi.h \
   /usr/include/mcp3004.h \
-  ../SoundThread.h \
-  ../CppThread.h \
   /usr/include/string.h \
   /usr/include/strings.h
 
@@ -206,8 +204,6 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: ../main.cpp \
 /usr/include/strings.h:
 
 /usr/include/string.h:
-
-../SoundThread.h:
 
 /usr/include/c++/8/bits/atomic_lockfree_defines.h:
 
@@ -346,8 +342,6 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: ../main.cpp \
 /usr/include/alloca.h:
 
 /usr/include/arm-linux-gnueabihf/bits/long-double.h:
-
-../CppThread.h:
 
 /usr/include/c++/8/bits/ios_base.h:
 
