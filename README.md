@@ -107,7 +107,7 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 <li> Adam Berdis </li>
 </ul>
 
-## Contact Us
+## Contact Us and Social Media
 
 <ul>
 <li>Email -  spaceharp@outlook.com </li>
