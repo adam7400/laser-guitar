@@ -10,9 +10,9 @@ The purpose of this real time project is the construction of a simple electronic
 
 The project will be undertaken in the C++ programming language and will use hardware such as a Raspberry Pi 4 . 
 
-
-	<img src="Schematic.jpg"></img>
-
+<div align="center">
+<img src="https://github.com/adam7400/space-harp/blob/main/Images/Schematic.jpg" alt="Schematic.jpg" >
+</div>
 
 
 Hardware: 
