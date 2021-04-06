@@ -6,7 +6,7 @@ This purpose of this real time project is the construction of a simple electroni
 
 
   <a href="https://github.com/adam7400/laser-harp">
-    <img src="Schematic.jpg" alt="Schematic" >
+    <img src="https://github.com/adam7400/space-harp/tree/main/Images/Schematic.jpg" alt="Schematic" >
   </a>
 
 
