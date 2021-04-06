@@ -1,6 +1,6 @@
 # Space Harp
 
-<img src="https://github.com/adam7400/space-harp/blob/main/Images/logo.png" alt="Logo" ">
+<img src="https://github.com/adam7400/space-harp/blob/main/Images/logo.png" alt="Logo" >
 
 
 ## Project Description 
