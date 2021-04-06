@@ -3,6 +3,7 @@
 <img src="logo.png"></img>
 
 <img src="logo.png" alt="Logo" width="500" height="600"> </img>
+<img src="https://github.com/adam7400/space-harp/blob/main/Images/logo.png" alt="Logo" height="160">
 
 
 ## Project Description 
@@ -12,9 +13,8 @@ The purpose of this real time project is the construction of a simple electronic
 The project will be undertaken in the C++ programming language and will use hardware such as a Raspberry Pi 4 . 
 
 
-  <a href="https://github.com/adam7400/space-harp/Images">
 	<img src="Schematic.jpg"></img>
-  </a>
+
 
 
 Hardware: 
