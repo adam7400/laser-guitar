@@ -120,10 +120,9 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 
 <ul>
 <li>Email -  spaceharp@outlook.com </li>
-<li>Facebook -  </li>
-<li>Instagram - </li>
-<li>Youtube - </li>
-<li>Twitter - [@Spaceharp1](https://twitter.com/Spaceharp1)</li>
+<li>Facebook - [@SpaceharpGlasgow] - https://www.facebook.com/SpaceharpGlasgow </li>
+<li>Instagram - [@spaceharp_glasgow] -  https://www.instagram.com/spaceharp_glasgow/</li>
+<li>Twitter - [@Spaceharp1] - https://twitter.com/Spaceharp1 </li>
 </ul>
 
 ## License 
