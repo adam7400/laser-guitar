@@ -101,12 +101,13 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 
 ## Contact Us
 
-Email -  spaceharp@outlook.com
-Facebook -  
-Instagram - 
-Youtube - 
-Twitter - 
-
+<ul>
+<li>Email -  spaceharp@outlook.com </li>
+<li>Facebook -  </li>
+<li>Instagram - </li>
+<li>Youtube - </li>
+<li>Twitter - </li>
+</ul>
 
 ## License 
 
