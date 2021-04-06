@@ -6,16 +6,19 @@
 
 ## Project Description 
 
-The purpose of this real time project is the construction of a simple electronic harp, where lasers will be used to simulate harp strings and pre-defined chords or notes corresponding to the appropriate strings will be played through the user audio output such as a monitor or USB speaker. 
+<p>The purpose of this real time project is the construction of a simple electronic harp, where lasers will be used to simulate harp strings and pre-defined chords or notes corresponding to the appropriate strings will be played through the user audio output such as a monitor or USB speaker. </p>
 
-The project will be undertaken in the C++ programming language and will use hardware such as a Raspberry Pi 4 . 
+<p> The project will be undertaken in the C++ programming language and will use hardware such as a Raspberry Pi 4 . </p>
+
+## Hardware: 
 
 <div align="center">
 <img src="https://github.com/adam7400/space-harp/blob/main/Images/Schematic.jpg" alt="Schematic.jpg" >
 </div>
 
+<p> As shown in the schematic above, laser diodes will shine towards the phototransitors acting as "harp strings" which will constantly feed back a digital signal from the ADC to the pi. The code is running on the Raspberry Pi and when the digital signal exceeds a threshold value (determined using a GPIO test) then the running code knowns the "string" has been played and the corresponding thread is executed to play the correct note through the preferred audio output.</p>
 
-Hardware: 
+<p>The following hardware is required to build the Space Harp. Instructions to follow. </p> 
 
 <li>Raspberry Pi 4 </li>
 <li>Laser Diodes </li>
