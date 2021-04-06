@@ -1,9 +1,6 @@
 # Space Harp
 
-<img src="logo.png"></img>
-
-<img src="logo.png" alt="Logo" width="500" height="600"> </img>
-<img src="https://github.com/adam7400/space-harp/blob/main/Images/logo.png" alt="Logo" height="160">
+<img src="https://github.com/adam7400/space-harp/blob/main/Images/logo.png" alt="Logo" ">
 
 
 ## Project Description 
