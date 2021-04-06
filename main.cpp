@@ -49,12 +49,12 @@ char e;
 
 int main (int argc, const char* argv[])
 {
-	int x1;	 		// input from ADC channel 1
-	int th1;		// digital signal threshold
+	int x0,x1,x2,x3,x4,x5;	 		// input from ADC channels 0-5
+	int th0,th1,th2,th3,th4,th5;		// digital signal threshold
 	int chord;
 	
 // Threshold value based on the resistor used
-th1 = 900;
+th0 = 900;
 
 
 // SPI setup
@@ -83,7 +83,7 @@ A.e = 'b';
 Chord current;
 
 
-
+// User input for picking a chord
 std::cout<<"Pick a chord (Ami - 1, A - 2): "<<std::endl;
 std::cin>> chord;
 
@@ -111,21 +111,32 @@ current.e = A.e;
 while (1)
 {
 
-// Read the digitalvalue from the ADC pin
-	x1 = analogRead (MY_PIN);
-	
+// Read the digitalvalue from the ADC channels
+	x0 = analogRead (MY_PIN);	
+	/*x1 = analogRead (MY_PIN + 1);	
+	x2 = analogRead (MY_PIN + 2);
+	x3 = analogRead (MY_PIN + 3);
+	x4 = analogRead (MY_PIN + 4);
+	x5 = analogRead (MY_PIN + 5);*/
 
 
 	// Create a thread representing string 1 (high E string)
-std::thread estring(play,x1,th1,current.e);
+std::thread estring(play,x0,th0,current.e);
 	//Create a thread representing string 2 (A string)
-//std::thread Astring(play,x2,th2,current.A);
-
+//std::thread Astring(play,x1,th1,current.A);
+	//Threads for other strings
+//std::thread Dstring(play,x2,th2,current.D);
+//std::thread Gstring(play,x3,th3,current.G);
+//std::thread Bstring(play,x4,th4,current.B);
+//std::thread Estring(play,x5,th5,current.E);
 
 // Wait until thread terminates
 estring.join();
 //Astring.join();
-
+//Dstring.join();
+//Gstring.join();
+//Bstring.join();
+//Estring.join();
 
 }
 

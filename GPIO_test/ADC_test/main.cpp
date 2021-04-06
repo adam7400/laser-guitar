@@ -11,22 +11,24 @@ using namespace std;
 
 int main(void)
 {
-int x,i;	// Digital signal
+int x,x1,x2;	// Digital signal
 float v;	// Voltage (V)
 float k = 3.3/1024; //ADC resolution
 
 // SPI setup
   wiringPiSetup() ;
-  mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channels
+  mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channel
 
 while(1){
 	x = analogRead (MY_PIN); 	// Read value from CH0 on ADC
+	x1 = analogRead (MY_PIN + 1);
+	x2 = analogRead (MY_PIN + 2);
+	cout<<"\nCH0: "<<x<<endl;	// Print the value of digital signal
+	cout<<"CH1: "<<x1<<endl;	// Print the value of digital signal
+	cout<<"CH2: "<<x2<<endl;
+	//cout<<"Voltage:  "<<k*(float)(x)<<"V"<<endl; // Print voltage
 	
-	cout<<"\nDigital signal: "<<x<<endl;	// Print the value of digital signal
-					
-	cout<<"Voltage:  "<<k*(float)(x)<<"V"<<endl; // Print voltage
-	
-	delay(200);
+	delay(1000);
 }
 	return 0;
 }
