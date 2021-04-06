@@ -84,6 +84,11 @@ We are at the early stages of the project but if you wish to contribute, wish wo
 
 If you are unsure about how to contribute, spot any problems or have suggestions on how we can improve, feel free to get in touch with us, our contact details can be found in the contact section. 
 
+## Release of Versions 
+
+Version 1.1 (v1.1) - Single String ,	Released 30/3/21
+Version 1.2 (v1.2) - Multiple Strings,	Release expected 12/4/21
+
 ## Authors 
 
 <ul>
