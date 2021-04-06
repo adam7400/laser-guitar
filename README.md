@@ -10,16 +10,25 @@
 	<li> 
 		<a href="## Project Description ">Project Description </a>   
 	</li>
+	<li> 
+		<a href="## Hardware ">Hardware </a>   
+	</li>
 	<li>
 		 <a href="## Project Aim and Objectives ">Project Aim and Objectives </a> 
 	<li> 
 		<a href="## Contributing to the project ">Contributing to the project </a>   
 	</li>
 	<li> 
+		<a href="## Release of Versions "> Release of Versions </a>   
+	</li>
+	<li> 
+		<a href="## Implementation  "> Implementation  </a>   
+	</li>
+	<li> 
 		<a href="## Authors  ">Authors </a>   
 	</li>
 	<li> 
-		<a href="## Contact Us">Contact Us </a>   
+		<a href="## Contact Us and Social Media ">Contact Us and Social Media </a>   
 	</li>
 	<li> 
 		<a href="## License ">License </a>   
