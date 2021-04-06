@@ -1,8 +1,6 @@
 # Space Harp
 
-
-
-
+<img src="logo.png"></img>
 
 
 
@@ -14,10 +12,9 @@ The project will be undertaken in the C++ programming language and will use hard
 
 
   <a href="https://github.com/adam7400/laser-harp">
-	<img height=40 src="Schematic.jpg"></img>
-    
+	<img src="Schematic.jpg"></img>
   </a>
- // <img src="Schematic.jpg" alt="Schematic">
+
 
 Hardware: 
 
