@@ -86,9 +86,10 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 
 ## Release of Versions 
 
-Version 1.1 (v1.1) - Single String ,	Released 30/3/21
-Version 1.2 (v1.2) - Multiple Strings,	Release expected 12/4/21
-
+<ol>
+<li>Version 1.1 (v1.1) - Single String ,	Released 30/3/21 </li>
+<li>Version 1.2 (v1.2) - Multiple Strings,	Release expected 12/4/21 </li>
+</ol>
 ## Authors 
 
 <ul>
