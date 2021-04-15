@@ -18,9 +18,19 @@
 void play(int DS, int threshold, char tone) { 
 
 	char a[100];
-	char b[100];
+	char b[100];	
+	char c[100];
+	char d[100];
+	char e[100];
+	char f[100];
+	char g[100];
 	strcpy(a,"aplay -d 1 samples_a.wav"); // Sound will play for 1 second and thread will terminate	
-	strcpy(b,"aplay -d 1 samples_b.wav");  
+	strcpy(b,"aplay -d 1 samples_b.wav");  	
+	strcpy(c,"aplay -d 1 samples_c.wav");  
+	strcpy(d,"aplay -d 1 samples_d.wav");  
+	strcpy(e,"aplay -d 1 samples_e.wav");  
+	strcpy(f,"aplay -d 1 samples_f.wav");  
+	strcpy(g,"aplay -d 1 samples_g.wav");  
 
 	if (DS < threshold)
 		if (tone=='a'){ 
@@ -29,6 +39,21 @@ void play(int DS, int threshold, char tone) {
 		else if (tone=='b'){ 
 		system(b);
 		}
+		else if (tone=='c'){ 
+		system(c);
+		}
+		else if (tone=='d'){ 
+		system(d);
+		} 
+		else if (tone=='e'){
+		system(e);
+		}
+		else if (tone=='f'){ 
+		system(f); 
+		} 
+		else if (tone=='g'){ 
+		system(g);	
+		} 	
 	}
 
 class Chord{
@@ -54,7 +79,12 @@ int main (int argc, const char* argv[])
 	int chord;
 	
 // Threshold value based on the resistor used
-th0 = 900;
+th0 = 1000;
+th1 = 900;
+th2 = 1000;
+th3 = 1000;
+th4 = 1000;
+th5 = 900;
 
 
 // SPI setup
@@ -64,12 +94,12 @@ th0 = 900;
 
 // define chords
 Chord Ami;
-/* Ami.E = ;
-Ami.B = ;
-Ami.G = ;
-Ami.D = ;
-Ami.A = ; */
-Ami.e = 'a';  // should be different tone, this is just for testing
+ Ami.E = 'e';
+Ami.B = 'b';
+Ami.G = 'g';
+Ami.D = 'd';
+Ami.A = 'a'; 
+Ami.e = 'f';  // should be different tone, this is just for testing
 
 Chord A;
 /* A.E = ;
@@ -90,11 +120,11 @@ std::cin>> chord;
 
 if (chord == 1) { 
 
-/* current.E = ;
-current.B = ;
-current.G = ;
-current.D = ;
-current.A = ; */
+ current.E = Ami.E ;
+current.B = Ami.B;
+current.G = Ami.G;
+current.D = Ami.D;
+current.A = Ami.A; 
 current.e = Ami.e;
 } 
 
@@ -113,30 +143,30 @@ while (1)
 
 // Read the digitalvalue from the ADC channels
 	x0 = analogRead (MY_PIN);	
-	/*x1 = analogRead (MY_PIN + 1);	
+	x1 = analogRead (MY_PIN + 1);	
 	x2 = analogRead (MY_PIN + 2);
 	x3 = analogRead (MY_PIN + 3);
 	x4 = analogRead (MY_PIN + 4);
-	x5 = analogRead (MY_PIN + 5);*/
+	x5 = analogRead (MY_PIN + 5);
 
 
 	// Create a thread representing string 1 (high E string)
-std::thread estring(play,x0,th0,current.e);
+std::thread Estring(play,x0,th0,current.E);
 	//Create a thread representing string 2 (A string)
-//std::thread Astring(play,x1,th1,current.A);
+std::thread Bstring(play,x1,th1,current.B);
 	//Threads for other strings
-//std::thread Dstring(play,x2,th2,current.D);
-//std::thread Gstring(play,x3,th3,current.G);
-//std::thread Bstring(play,x4,th4,current.B);
-//std::thread Estring(play,x5,th5,current.E);
+std::thread Gstring(play,x2,th2,current.G);
+std::thread Dstring(play,x3,th3,current.D);
+std::thread Astring(play,x4,th4,current.A);
+std::thread estring(play,x5,th5,current.e);
 
 // Wait until thread terminates
 estring.join();
-//Astring.join();
-//Dstring.join();
-//Gstring.join();
-//Bstring.join();
-//Estring.join();
+Astring.join();
+Dstring.join();
+Gstring.join();
+Bstring.join();
+Estring.join();
 
 }
 
