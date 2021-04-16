@@ -24,13 +24,16 @@ void play(int DS, int threshold, char tone) {
 	char e[100];
 	char f[100];
 	char g[100];
-	strcpy(a,"aplay -d 1 samples_a.wav"); // Sound will play for 1 second and thread will terminate	
-	strcpy(b,"aplay -d 1 samples_b.wav");  	
-	strcpy(c,"aplay -d 1 samples_c.wav");  
-	strcpy(d,"aplay -d 1 samples_d.wav");  
-	strcpy(e,"aplay -d 1 samples_e.wav");  
-	strcpy(f,"aplay -d 1 samples_f.wav");  
-	strcpy(g,"aplay -d 1 samples_g.wav");  
+
+// Sound will play for 1 second and thread will terminate
+
+	strcpy(a,"aplay -d 1 A.wav"); 	
+	strcpy(b,"aplay -d 1 B.wav");  	
+	strcpy(c,"aplay -d 1 C.wav");  
+	strcpy(d,"aplay -d 1 D.wav");  
+	strcpy(e,"aplay -d 1 E.wav");  
+	strcpy(f,"aplay -d 1 F.wav");  
+	strcpy(g,"aplay -d 1 G.wav");  
 
 	if (DS < threshold)
 		if (tone=='a'){ 
