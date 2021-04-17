@@ -108,33 +108,27 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 
 <p> A Raspberry pi with the Raspbian OS is required for the following instructions. </p>
 
-<ol>
-	<li> Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". </li>
+	<p> Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". </p>
 
-	<li> Inside this folder, clone the SpaceHarp repository from the command line using the following command. 
-		> git clone https://github.com/adam7400/space-harp.git  <li>
+	<p> Inside this folder, clone the SpaceHarp repository from the command line using the following command. 
+		> git clone https://github.com/adam7400/space-harp.git  </p>
 
-	<li> Navigate to the "space-harp" folder using the following command. </li>
+	<p> Navigate to the "space-harp" folder using the following command. </p>
 		> cd space-harp
 
-	<li> Navigate to the "build" folder using the following command. </li>
+	<p> Navigate to the "build" folder using the following command. </p>
 		> cd build
 
-	<li> Use the CMakeists to generate the build files from the following command. (Make sure you are using the required CMake version, this can be altered in CMAkeLists.txt </li>
+	<p> Use the CMakeists to generate the build files from the following command. (Make sure you are using the required CMake version, this can be altered in CMAkeLists.txt </p>
 		> cmake  -S .. -B .
 		
-	<li> "Make" using the following command. </li>
+	<p> "Make" using the following command. </p>
 		> make
 
-	<li> Start the SpaceHarp by executing the executable file, using the following command. </li>
+	<p> Start the SpaceHarp by executing the executable file, using the following command. </p>
 		> ./ SPACE_HARP
 
 
-
-
-	
-
-</ol>
 
 
 
