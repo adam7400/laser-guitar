@@ -104,7 +104,22 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 <li>Version 1.2 (v1.2) - Multiple Strings,	Released 16/4/21 </li>
 </ul>
 
-## Implementation
+## Setting Up The SpaceHarp
+
+<p> A Raspberry pi with the Raspbian OS is required for the following instructions. </p>
+
+<ol>
+	<li> Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". </li>
+
+	<li> Inside this folder, clone the SpaceHarp repository from the command line using the following command. </li>
+		> git clone https://github.com/adam7400/space-harp.git
+
+
+</ol>
+
+
+
+
 
 
 
