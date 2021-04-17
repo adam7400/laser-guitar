@@ -111,9 +111,28 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 <ol>
 	<li> Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". </li>
 
-	<li> Inside this folder, clone the SpaceHarp repository from the command line using the following command. </li>
-		> git clone https://github.com/adam7400/space-harp.git
+	<li> Inside this folder, clone the SpaceHarp repository from the command line using the following command. 
+		> git clone https://github.com/adam7400/space-harp.git  <li>
 
+	<li> Navigate to the "space-harp" folder using the following command. </li>
+		> cd space-harp
+
+	<li> Navigate to the "build" folder using the following command. </li>
+		> cd build
+
+	<li> Use the CMakeists to generate the build files from the following command. (Make sure you are using the required CMake version, this can be altered in CMAkeLists.txt </li>
+		> cmake  -S .. -B .
+		
+	<li> "Make" using the following command. </li>
+		> make
+
+	<li> Start the SpaceHarp by executing the executable file, using the following command. </li>
+		> ./ SPACE_HARP
+
+
+
+
+	
 
 </ol>
 
