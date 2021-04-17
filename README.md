@@ -116,24 +116,17 @@ A Raspberry pi with the Raspbian OS is required for the following instructions.
 	Navigate to the "space-harp" folder using the following command. 
 		> cd space-harp
 
-	<p> Navigate to the "build" folder using the following command. </p>
+	Navigate to the "build" folder using the following command. 
 		> cd build
 
-	<p> Use the CMakeists to generate the build files from the following command. (Make sure you are using the required CMake version, this can be altered in CMAkeLists.txt </p>
+	Use the CMakeists to generate the build files from the following command. (Make sure you are using the required CMake version, this can be altered in CMAkeLists.txt 
 		> cmake  -S .. -B .
 		
-	<p> "Make" using the following command. </p>
+	 "Make" using the following command. 
 		> make
 
-	<p> Start the SpaceHarp by executing the executable file, using the following command. </p>
+	 Start the SpaceHarp by executing the executable file, using the following command. 
 		> ./ SPACE_HARP
-
-
-
-
-
-
-
 
 
 ## Authors 
