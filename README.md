@@ -106,14 +106,14 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 
 ## Setting Up The SpaceHarp
 
-<p> A Raspberry pi with the Raspbian OS is required for the following instructions. </p>
+A Raspberry pi with the Raspbian OS is required for the following instructions. 
 
-	<p> Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". </p>
+	Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". 
 
-	<p> Inside this folder, clone the SpaceHarp repository from the command line using the following command. 
-		> git clone https://github.com/adam7400/space-harp.git  </p>
+	Inside this folder, clone the SpaceHarp repository from the command line using the following command. 
+		> git clone https://github.com/adam7400/space-harp.git  
 
-	<p> Navigate to the "space-harp" folder using the following command. </p>
+	Navigate to the "space-harp" folder using the following command. 
 		> cd space-harp
 
 	<p> Navigate to the "build" folder using the following command. </p>
