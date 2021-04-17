@@ -13,6 +13,21 @@
 #define SPI_CHAN 0
 #define MY_PIN 12345
 
+static volatile bool keep_going = true;
+
+ 
+void userInput() {
+
+	while(keep_going) { 
+		if (std::cin.get() == 'c') {
+
+		keep_going = false;
+		} 
+	} 
+} 
+
+
+
 
 
 void play(int DS, int threshold, char tone) { 
@@ -22,7 +37,7 @@ void play(int DS, int threshold, char tone) {
 	char c[100];
 	char d[100];
 	char e[100];
-	char f[100];
+	char x[100];
 	char g[100];
 
 // Sound will play for 1 second and thread will terminate
@@ -32,7 +47,7 @@ void play(int DS, int threshold, char tone) {
 	strcpy(c,"aplay -d 1 C.wav");  
 	strcpy(d,"aplay -d 1 D.wav");  
 	strcpy(e,"aplay -d 1 E.wav");  
-	strcpy(f,"aplay -d 1 F.wav");  
+	strcpy(x,"aplay -d 1 Ehi.wav");  
 	strcpy(g,"aplay -d 1 G.wav");  
 
 	if (DS < threshold)
@@ -51,8 +66,8 @@ void play(int DS, int threshold, char tone) {
 		else if (tone=='e'){
 		system(e);
 		}
-		else if (tone=='f'){ 
-		system(f); 
+		else if (tone=='x'){ 
+		system(x); 
 		} 
 		else if (tone=='g'){ 
 		system(g);	
@@ -82,11 +97,11 @@ int main (int argc, const char* argv[])
 	int chord;
 	
 // Threshold value based on the resistor used
-th0 = 1000;
+th0 = 900;
 th1 = 900;
-th2 = 1000;
-th3 = 1000;
-th4 = 1000;
+th2 = 900;
+th3 = 900;
+th4 = 900;
 th5 = 900;
 
 
@@ -96,52 +111,55 @@ th5 = 900;
 
 
 // define chords
-Chord Ami;
- Ami.E = 'e';
-Ami.B = 'b';
-Ami.G = 'g';
-Ami.D = 'd';
-Ami.A = 'a'; 
-Ami.e = 'f';  // should be different tone, this is just for testing
+Chord free;
+free.E = 'e';
+free.B = 'b';
+free.G = 'g';
+free.D = 'd';
+free.A = 'a'; 
+free.e = 'x';  // should be different tone, this is just for testing
 
 Chord A;
-/* A.E = ;
-A.B = ;
-A.G = ;
-A.D = ;
-A.A = ; */
-A.e = 'b';
+ A.E = 'f';
+A.B = 'a';
+A.G = 'd';
+A.D = 'g';
+A.A ='b' ;
+A.e = 'e';
 
 // define the object for the current chord
 Chord current;
 
-
+while(1) { 
 // User input for picking a chord
-std::cout<<"Pick a chord (Ami - 1, A - 2): "<<std::endl;
+std::cout<<"Pick a chord (none - 1, A - 2): "<<std::endl;
 std::cin>> chord;
 
 
 if (chord == 1) { 
 
- current.E = Ami.E ;
-current.B = Ami.B;
-current.G = Ami.G;
-current.D = Ami.D;
-current.A = Ami.A; 
-current.e = Ami.e;
+ current.E = free.E ;
+current.B = free.B;
+current.G = free.G;
+current.D = free.D;
+current.A = free.A; 
+current.e = free.e;
 } 
 
 else if (chord == 2) { 
  
-/* current.E = ;
-current.B = ;
-current.G = ;
-current.D = ;
-current.A = ; */
+current.E = A.E ;
+current.B = A.B;
+current.G = A.G;
+current.D = A.D;
+current.A = A.A;
 current.e = A.e;
 } 
 
-while (1)
+
+std::thread changeChord(userInput); 
+
+while (keep_going)
 {
 
 // Read the digitalvalue from the ADC channels
@@ -173,6 +191,8 @@ Estring.join();
 
 }
 
+changeChord.join(); 
+keep_going = 1;
 
 
 
@@ -180,8 +200,7 @@ Estring.join();
 
 
 
-
-
+} 
 
 
 
