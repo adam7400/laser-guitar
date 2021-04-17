@@ -14,7 +14,7 @@
 		<a href="## Hardware ">Hardware </a>   
 	</li>
 	<li>
-		 <a href="## Project Aim and Objectives ">Project Aim and Objectives </a> 
+		<a href="## Project Aim and Objectives ">Project Aim and Objectives </a> 
 	<li> 
 		<a href="## Contributing to the project ">Contributing to the project </a>   
 	</li>
@@ -22,7 +22,7 @@
 		<a href="## Release of Versions "> Release of Versions </a>   
 	</li>
 	<li> 
-		<a href="## Implementation  "> Implementation  </a>   
+		<a href="## Setting Up The SpaceHarp  "> Setting Up The SpaceHarp  </a>   
 	</li>
 	<li> 
 		<a href="## Authors  ">Authors </a>   
@@ -51,13 +51,14 @@
 
 <p>The following hardware is required to build the Space Harp. Instructions to follow. </p> 
 
-<li>Raspberry Pi 4 </li>
-<li>Laser Diodes </li>
-<li>Phototransistors </li>
-<li>Analogue to Digital Converter (ADC) </li>
-<li>Monitor(with audio output) or Speaker (Bluetooth or USB) </li>
+<li> 1 x Raspberry Pi 4B </li>
+<li> 1 x Laser Diodes </li>
+<li> 1 x Phototransistors </li>
+<li> 1 x 9V Battery</li>
+<li> 1 x Analogue to Digital Converter (ADC) </li>
+<li> 1 x Monitor(with audio output) or Speaker (Bluetooth or USB) </li>
 
-
+<p> Additional items to construct the SpaceHarp will be Breadboards, Electric Wiring, Electrical Tape and a Stand to mount device <p>
 
 
 
@@ -74,9 +75,7 @@ So that the development of the project is undertaken in an efficient manner the 
 <li>Get 1 string working. </li>
 <li>Get the remaining strings working. </li>
 <li>Incorporate a way for the user to change notes or chords as they play. </li>
-<li>Look at how to incorporate a Left-handed mode. </li>
 <li>Develop efficient code in C++. </li>
-<li>Document code throughout project. </li>
 <li>Use version control throughout to track bugs, undertake revisions and test code. </li>
 <li>Promote on GitHub, social media and through live demos. </li>
 </ol>
@@ -84,7 +83,7 @@ So that the development of the project is undertaken in an efficient manner the 
 
 ## Contributing to the project
 
-We are at the early stages of the project but if you wish to contribute, wish would be great !!! Please follow the following steps:
+If you wish to contribute, which would be great !!! Please follow the following steps:
 
 <ol>
 <li>Fork the project repository</li>
@@ -100,8 +99,8 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 ## Release of Versions 
 
 <ul>
-<li>Version 1.1 (v1.1) - Single String ,	Released 11/3/21 </li>
-<li>Version 1.2 (v1.2) - Multiple Strings,	Released 16/4/21 </li>
+<li>Version 1.1 (v1.1) - Single String ,		Released 11/3/21 </li>
+<li>Version 1.2 (v1.2) - Multiple Strings,		Released 16/4/21 </li>
 </ul>
 
 ## Setting Up The SpaceHarp
