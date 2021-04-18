@@ -30,7 +30,7 @@ void userInput() {
 
 
 
-void play(int DS, int threshold, char tone) { 
+void play(int DS, int threshold, char tone ) { 
 
 	char a[100];
 	char b[100];	
@@ -39,16 +39,28 @@ void play(int DS, int threshold, char tone) {
 	char e[100];
 	char x[100];
 	char g[100];
+	char i[100];
+	char j[100];
+	char k[100];
+	char l[100];
+	char n[100];
+	char o[100];
 
 // Sound will play for 1 second and thread will terminate
 
-	strcpy(a,"aplay -d 1 A.wav"); 	
-	strcpy(b,"aplay -d 1 B.wav");  	
-	strcpy(c,"aplay -d 1 C.wav");  
-	strcpy(d,"aplay -d 1 D.wav");  
-	strcpy(e,"aplay -d 1 E.wav");  
-	strcpy(x,"aplay -d 1 Ehi.wav");  
-	strcpy(g,"aplay -d 1 G.wav");  
+	strcpy(a,"aplay -q -d 1 A.wav"); 	
+	strcpy(b,"aplay -q -d 1 B.wav");  	
+	strcpy(c,"aplay -q -d 1 C.wav");  
+	strcpy(d,"aplay -q -d 1 D.wav");  
+	strcpy(e,"aplay -q -d 1 E.wav");  
+	strcpy(x,"aplay -q -d 1 Ehi.wav");  	
+	strcpy(g,"aplay -q -d 1 G.wav");
+	strcpy(i,"aplay -q -d 1 C2.wav");
+	strcpy(j,"aplay -q -d 1 G2.wav");  
+	strcpy(k,"aplay -q -d 1 A#1.wav");  
+	strcpy(l,"aplay -q -d 1 F2.wav");  
+	strcpy(n,"aplay -q -d 1 C#3hi.wav");  
+	strcpy(o,"aplay -q -d 1 C#3.wav");  
 
 	if (DS < threshold)
 		if (tone=='a'){ 
@@ -71,7 +83,34 @@ void play(int DS, int threshold, char tone) {
 		} 
 		else if (tone=='g'){ 
 		system(g);	
+		}
+		
+		else if (tone=='i'){ 
+		system(i);	
 		} 	
+
+ 	
+		else if (tone=='j'){ 
+		system(j);	
+		} 	
+
+		else if (tone=='k'){ 
+		system(k);	
+		} 	
+
+		else if (tone=='l'){ 
+		system(l);	
+		} 	
+		
+		else if (tone=='n'){ 
+		system(n);	
+		} 	
+		
+		else if (tone=='o'){ 
+		system(o);	
+		} 	
+
+
 	}
 
 class Chord{
@@ -93,16 +132,11 @@ char e;
 int main (int argc, const char* argv[])
 {
 	int x0,x1,x2,x3,x4,x5;	 		// input from ADC channels 0-5
-	int th0,th1,th2,th3,th4,th5;		// digital signal threshold
+	int th;		// digital signal threshold
 	int chord;
 	
 // Threshold value based on the resistor used
-th0 = 900;
-th1 = 900;
-th2 = 900;
-th3 = 900;
-th4 = 900;
-th5 = 900;
+th = 500;
 
 
 // SPI setup
@@ -112,48 +146,79 @@ th5 = 900;
 
 // define chords
 Chord free;
-free.E = 'e';
+free.e = 'x';
 free.B = 'b';
 free.G = 'g';
 free.D = 'd';
 free.A = 'a'; 
-free.e = 'x';  // should be different tone, this is just for testing
+free.E = 'e';  // should be different tone, this is just for testing
 
-Chord A;
- A.E = 'f';
-A.B = 'a';
-A.G = 'd';
-A.D = 'g';
-A.A ='b' ;
-A.e = 'e';
+Chord Emi;
+Emi.e = 'x';
+Emi.B = 'b';
+Emi.G = 'g';
+Emi.D = 'i' ;  //!!!
+Emi.A ='j' ;	//!!!
+Emi.E = 'e';
+
+Chord Ami;
+Ami.e = 'x';
+Ami.B = 'k';		//!!!
+Ami.G = 'l'; 		//!!!
+Ami.D = 'i';		//!!!
+Ami.A = 'a';		
+Ami.E = 'm';		//!!! muted ,
+
+Chord G; 
+G.e = 'n'; 	 	//!!!
+G.B = 'b';
+G.G = 'g';
+G.D = 'd';
+G.A = 'j';		//!!!
+G.E = 'o'; 	//!!!
+
+
 
 // define the object for the current chord
 Chord current;
 
 while(1) { 
 // User input for picking a chord
-std::cout<<"Pick a chord (none - 1, A - 2): "<<std::endl;
+std::cout<<"Enter the number to pick a chord: "<<std::endl;
+std::cout<<"1    Open strings"<<std::endl;
+std::cout<<"2    E minor"<<std::endl;
+std::cout<<"3    A minor"<<std::endl;
+std::cout<<"4    G"<<std::endl;
 std::cin>> chord;
-
+std::cout<<"Type in 'c' and press ENTER to return to the changing chords menu"<<std::endl;
 
 if (chord == 1) { 
 
- current.E = free.E ;
+current.e = free.e ;
 current.B = free.B;
 current.G = free.G;
 current.D = free.D;
 current.A = free.A; 
-current.e = free.e;
+current.E = free.E;
 } 
 
 else if (chord == 2) { 
  
-current.E = A.E ;
-current.B = A.B;
-current.G = A.G;
-current.D = A.D;
-current.A = A.A;
-current.e = A.e;
+current.e = Emi.e ;
+current.B = Emi.B;
+current.G = Emi.G;
+current.D = Emi.D;
+current.A = Emi.A;
+current.E = Emi.E;
+} 
+
+else if (chord == 3){ 
+current = Ami;
+}  
+
+
+else if (chord == 4) { 
+current = G;
 } 
 
 
@@ -170,17 +235,15 @@ while (keep_going)
 	x4 = analogRead (MY_PIN + 4);
 	x5 = analogRead (MY_PIN + 5);
 
-
-	// Create a thread representing string 1 (high E string)
-std::thread Estring(play,x0,th0,current.E);
+//E is low E string
+std::thread Estring(play,x0,th,current.E);
 	//Create a thread representing string 2 (A string)
-std::thread Bstring(play,x1,th1,current.B);
+std::thread Astring(play,x1,th,current.A);
 	//Threads for other strings
-std::thread Gstring(play,x2,th2,current.G);
-std::thread Dstring(play,x3,th3,current.D);
-std::thread Astring(play,x4,th4,current.A);
-std::thread estring(play,x5,th5,current.e);
-
+std::thread Dstring(play,x2,th,current.D);
+std::thread Gstring(play,x3,th,current.G);
+std::thread Bstring(play,x4,th,current.B);
+std::thread estring(play,x5,th,current.e);
 // Wait until thread terminates
 estring.join();
 Astring.join();
