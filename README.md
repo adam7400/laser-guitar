@@ -52,11 +52,12 @@
 <p>The following hardware is required to build the Space Harp. Instructions to follow. </p> 
 
 <li> 1 x Raspberry Pi 4B </li>
-<li> 1 x Laser Diodes </li>
-<li> 1 x Phototransistors </li>
+<li> 6 x Laser Diodes </li>
+<li> 6 x Phototransistors </li>
 <li> 1 x 9V Battery</li>
 <li> 1 x Analogue to Digital Converter (ADC) </li>
 <li> 1 x Monitor(with audio output) or Speaker (Bluetooth or USB) </li>
+
 
 <p> Additional items to construct the SpaceHarp will be Breadboards, Electric Wiring, Electrical Tape and a Stand to mount device <p>
 
