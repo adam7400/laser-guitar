@@ -1,0 +1,3 @@
+/home/pi/Projects/temp2/v2/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Projects/temp2/v2/build/CMakeFiles/spaceHarp.dir
+/home/pi/Projects/temp2/v2/build/CMakeFiles/edit_cache.dir
