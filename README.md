@@ -15,14 +15,15 @@
 	</li>
 	<li>
 		<a href="## Project Aim and Objectives ">Project Aim and Objectives </a> 
+	</li>
 	<li> 
-		<a href="## Contributing to the project ">Contributing to the project </a>   
+		<a href="## Setting Up The SpaceHarp  "> Setting Up The SpaceHarp  </a>   
 	</li>
 	<li> 
 		<a href="## Release of Versions "> Release of Versions </a>   
 	</li>
 	<li> 
-		<a href="## Setting Up The SpaceHarp  "> Setting Up The SpaceHarp  </a>   
+		<a href="## Contributing to the project ">Contributing to the project </a>  
 	</li>
 	<li> 
 		<a href="## Authors  ">Authors </a>   
@@ -51,17 +52,16 @@
 
 <p>The following hardware is required to build the Space Harp. Instructions to follow. </p> 
 
+<ul>
 <li> 1 x Raspberry Pi 4B </li>
 <li> 6 x Laser Diodes </li>
 <li> 6 x Phototransistors </li>
 <li> 1 x 9V Battery</li>
 <li> 1 x Analogue to Digital Converter (ADC) </li>
 <li> 1 x Monitor(with audio output) or Speaker (Bluetooth or USB) </li>
-
+</ul>
 
 <p> Additional items to construct the SpaceHarp will be Breadboards, Electric Wiring, Electrical Tape and a Stand to mount device <p>
-
-
 
 ## Project Aim and Objectives
 
@@ -80,29 +80,7 @@ So that the development of the project is undertaken in an efficient manner the 
 <li>Use version control throughout to track bugs, undertake revisions and test code. </li>
 <li>Promote on GitHub, social media and through live demos. </li>
 </ol>
-
-
-## Contributing to the project
-
-If you wish to contribute, which would be great !!! Please follow the following steps:
-
-<ol>
-<li>Fork the project repository</li>
-<li>Clone or download the project repository </li>
-<li>Create a new branch</li>
-<li>Make suitable changes and commit them</li>
-<li>Push the changes </li>
-<li>Submit a pull request</li>
-</ol>
-
-If you are unsure about how to contribute, spot any problems or have suggestions on how we can improve, feel free to get in touch with us, our contact details can be found in the contact section. 
-
-## Release of Versions 
-
-<ul>
-<li>Version 1.1 (v1.1) - Single String ,		Released 11/3/21 </li>
-<li>Version 1.2 (v1.2) - Multiple Strings,		Released 16/4/21 </li>
-</ul>
+ 
 
 ## Setting Up The SpaceHarp
 
@@ -127,6 +105,28 @@ A Raspberry pi with the Raspbian OS is required for the following instructions.
 
 	 Start the SpaceHarp by executing the executable file, using the following command. 
 		> ./ SPACE_HARP
+
+## Release of Versions 
+
+<ul>
+<li>Version 1.1 (v1.1) - Single String ,		Released 11/3/21 </li>
+<li>Version 1.2 (v1.2) - Multiple Strings,		Released 16/4/21 </li>
+</ul>
+
+## Contributing to the project
+
+If you wish to contribute, which would be great !!! Please follow the following steps:
+
+<ol>
+<li>Fork the project repository</li>
+<li>Clone or download the project repository </li>
+<li>Create a new branch</li>
+<li>Make suitable changes and commit them</li>
+<li>Push the changes </li>
+<li>Submit a pull request</li>
+</ol>
+
+If you are unsure about how to contribute, spot any problems or have suggestions on how we can improve, feel free to get in touch with us, our contact details can be found in the contact section. 
 
 
 ## Authors 
