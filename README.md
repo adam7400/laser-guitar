@@ -84,6 +84,8 @@ So that the development of the project is undertaken in an efficient manner the 
 
 ## Setting Up The SpaceHarp
 
+A tutorial of how to setup the Pi can be viewed on the SpaceHarp Instagram or Facebook. Make sure your Pi has SSH and SPI enabled.
+
 A Raspberry pi with the Raspbian OS is required for the following instructions. 
 
 	Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". 
