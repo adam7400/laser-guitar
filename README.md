@@ -44,7 +44,7 @@
 ## Hardware
 
 <div align="center">
-<img src="https://github.com/adam7400/space-harp/blob/main/Images/Schematic.jpg" alt="Schematic.jpg" >
+<img src="https://github.com/adam7400/space-harp/blob/main/Images/Schematic_v2.jpg" alt="Schematic_v2.jpg" >
 </div>
 
 <p> As shown in the schematic above, laser diodes will shine towards the phototransitors acting as "harp strings" which will constantly feed back a digital signal from the ADC to the pi. The code is running on the Raspberry Pi and when the digital signal exceeds a threshold value (determined using a GPIO test) then the running code knowns the "string" has been played and the corresponding thread is executed to play the correct note through the preferred audio output.</p>
