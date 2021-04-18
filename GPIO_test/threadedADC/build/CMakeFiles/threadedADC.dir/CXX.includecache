@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Projects/temp2/GPIO_test/threadedADC/main.cpp
+wiringPi.h
+-
+mcp3004.h
+-
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+thread
+-
+

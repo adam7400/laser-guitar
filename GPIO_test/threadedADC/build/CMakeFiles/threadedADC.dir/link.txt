@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/threadedADC.dir/main.cpp.o  -o threadedADC   -L/usr/include  -Wl,-rpath,/usr/include -lwiringPi -lpthread 

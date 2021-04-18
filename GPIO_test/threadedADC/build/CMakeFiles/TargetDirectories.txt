@@ -1,0 +1,3 @@
+/home/pi/Projects/temp2/GPIO_test/threadedADC/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Projects/temp2/GPIO_test/threadedADC/build/CMakeFiles/threadedADC.dir
+/home/pi/Projects/temp2/GPIO_test/threadedADC/build/CMakeFiles/edit_cache.dir
