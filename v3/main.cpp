@@ -5,8 +5,8 @@
 #include <mcp3004.h>
 //#include <cstdlib>
 #include <string.h>
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 
 
@@ -151,7 +151,7 @@ int main (void)
 	int chord;
 	
 // Threshold value based on the resistor used
-th = 800;
+th = 900;
 
 
 // SPI setup
