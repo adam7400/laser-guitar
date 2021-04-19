@@ -86,7 +86,10 @@ So that the development of the project is undertaken in an efficient manner the 
 
 A tutorial of how to setup the Pi can be viewed on the SpaceHarp Instagram or Facebook. Make sure your Pi has SSH and SPI enabled.
 
-A Raspberry pi with the Raspbian OS is required for the following instructions. 
+Install CMake using the following command in the RaspberryPi command line
+	> sudo apt-get install cmake
+
+<p> A Raspberry pi with the Raspbian OS is required for the following instructions. </p>
 
 	Create a folder on your pi that will solely be for the SpaceHarp. Call the folder "Projects". 
 
@@ -111,10 +114,10 @@ A Raspberry pi with the Raspbian OS is required for the following instructions.
 ## Release of Versions 
 
 <ul>
-<li>Version 0 - Initial Setup </li>
-<li>Version 1 - Single String </li>
-<li>Version 2 - Multiple Strings </li>
-<li>Version 3 - Multiple Strings with added chords</li>
+<li>Version 0.0 - Initial Setup </li>
+<li>Version 1.0 - Single String </li>
+<li>Version 2.0 - Multiple Strings </li>
+<li>Version 3.0 - Multiple Strings with added chords</li>
 </ul>
 
 ## Contributing to the project
@@ -153,3 +156,19 @@ If you are unsure about how to contribute, spot any problems or have suggestions
 ## License 
 
 This project will operate under the terms of GNU General Public License v3.0 . Please refer to the LICENSE.md file in the repository for further information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
