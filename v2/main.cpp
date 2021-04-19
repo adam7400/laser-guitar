@@ -43,7 +43,7 @@ void string(int pin, int threshold, char tone){
 	strcpy(a,"aplay -d 1 A.wav"); 
 	strcpy(e,"aplay -d 1 E.wav");  
 	
-	while(1){
+	while(keep_going){
 		x = analogRead (MY_PIN+pin);
 		if (x < threshold && playing==0){
 			playing = 1;

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spaceHarp.dir/main.cpp.o"
+  "CMakeFiles/spaceHarp.dir/main.cpp.o.d"
   "spaceHarp"
   "spaceHarp.pdb"
 )

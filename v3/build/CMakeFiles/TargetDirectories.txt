@@ -1,0 +1,3 @@
+/home/pi/Projects/space-harp/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Projects/space-harp/build/CMakeFiles/SPACE_HARP.dir
+/home/pi/Projects/space-harp/build/CMakeFiles/edit_cache.dir
