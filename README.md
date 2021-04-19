@@ -86,8 +86,8 @@ So that the development of the project is undertaken in an efficient manner the 
 
 A tutorial of how to setup the Pi can be viewed on the SpaceHarp Instagram or Facebook. Make sure your Pi has SSH and SPI enabled.
 
-Install CMake using the following command in the RaspberryPi command line
-	> sudo apt-get install cmake
+Install CMake using the following command in the RaspberryPi command line.
+		> sudo apt-get install cmake
 
 <p> A Raspberry pi with the Raspbian OS is required for the following instructions. </p>
 
