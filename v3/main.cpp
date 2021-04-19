@@ -194,6 +194,15 @@ G.E = 'o'; 	//!!!
 
 
 
+Chord Smoke_On_The_Water;
+SOTW.e = 'x'
+SOTW.B = 'b'
+SOTW.G = 'k'
+SOTW.D = 'a'
+SOTW.A = 'g'
+SOTW.E = 'e'
+
+
 // define the object for the current chord
 Chord current;
 
@@ -204,27 +213,16 @@ std::cout<<"1    Open strings"<<std::endl;
 std::cout<<"2    E minor"<<std::endl;
 std::cout<<"3    A minor"<<std::endl;
 std::cout<<"4    G"<<std::endl;
+std::cout<<"5    Smoke On The Water"<<std::endl;
 std::cin>> chord;
 std::cout<<"Type in 'c' and press ENTER to return to the changing chords menu"<<std::endl;
 
 if (chord == 1) { 
-
-current.e = free.e ;
-current.B = free.B;
-current.G = free.G;
-current.D = free.D;
-current.A = free.A; 
-current.E = free.E;
+current = free;
 } 
 
 else if (chord == 2) { 
- 
-current.e = Emi.e ;
-current.B = Emi.B;
-current.G = Emi.G;
-current.D = Emi.D;
-current.A = Emi.A;
-current.E = Emi.E;
+current = Emi; 
 } 
 
 else if (chord == 3){ 
@@ -234,6 +232,10 @@ current = Ami;
 
 else if (chord == 4) { 
 current = G;
+} 
+
+else if (chord == 5) { 
+current = Smoke_On_The_Water;
 } 
 
 
