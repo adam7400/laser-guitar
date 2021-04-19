@@ -1,5 +1,5 @@
 CMakeFiles/SPACE_HARP.dir/main.cpp.o: \
- /home/pi/Projects/space-harp/main.cpp /usr/include/stdc-predef.h \
+ /home/pi/Projects/space-harp/v3/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/8/iostream \
  /usr/include/arm-linux-gnueabihf/c++/8/bits/c++config.h \
  /usr/include/arm-linux-gnueabihf/c++/8/bits/os_defines.h \
@@ -156,4 +156,5 @@ CMakeFiles/SPACE_HARP.dir/main.cpp.o: \
  /usr/include/c++/8/bits/atomic_base.h \
  /usr/include/c++/8/bits/atomic_lockfree_defines.h \
  /usr/include/c++/8/backward/auto_ptr.h /usr/include/wiringPi.h \
- /usr/include/mcp3004.h /usr/include/string.h /usr/include/strings.h
+ /usr/include/mcp3004.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/8/stdlib.h

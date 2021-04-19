@@ -10,13 +10,16 @@
 
 
 
-// SPI definitions
+// SPI set-up
 #define SPI_CHAN 0
 #define MY_PIN 100
 
+
+// Boolean to be used in the threads for the use of user interrupt
 static volatile bool keep_going = true;
 
- 
+
+// User interrupt function 
 void userInput() {
 
 	while(keep_going) { 
@@ -30,7 +33,7 @@ void userInput() {
 
 
 
-
+// Function to play sound
 void play(int pin, int threshold, char tone ) { 
 
 
@@ -51,9 +54,9 @@ void play(int pin, int threshold, char tone ) {
 	char n[100];
 	char o[100];
 
-// Sound will play for 1 second and thread will terminate
 
-	strcpy(a,"aplay -q -d 1 A.wav"); 	
+
+	strcpy(a,"aplay -q -d 1 A.wav");  	// Sound will play for 1 second 	
 	strcpy(b,"aplay -q -d 1 B.wav");  	
 	strcpy(c,"aplay -q -d 1 C.wav");  
 	strcpy(d,"aplay -q -d 1 D.wav");  
@@ -70,10 +73,10 @@ void play(int pin, int threshold, char tone ) {
 
 	while(keep_going){
 	
-	y = analogRead(MY_PIN+pin);
-	if (y < threshold && playing==0){ 
+	y = analogRead(MY_PIN+pin);			// Read the value from the ADC channel
+	if (y < threshold && playing==0){ 		// Play corresponding sound if digital signal value drops below thr.
 		playing = 1;
-		if (tone=='a'){ 
+		if (tone=='a'){ 			
 		system(a);
 		}
 		else if (tone=='b'){ 
@@ -129,9 +132,12 @@ void play(int pin, int threshold, char tone ) {
 }
 
 
+
 class Chord{
 public:
 
+
+// Char to represent each string
 char E;
 char B;
 char G;
@@ -147,8 +153,8 @@ char e;
 
 int main (void)
 {
-	int th;		// digital signal threshold
-	int chord;
+	int th;		// Digital signal threshold
+	int chord;	
 	
 // Threshold value based on the resistor used
 th = 900;
@@ -159,38 +165,40 @@ th = 900;
   	mcp3004Setup (MY_PIN, SPI_CHAN); // 3004 and 3008 are the same 4/8 channels
 
 
-// define chords
+// Define chords
+
+// Open strings
 Chord free;
 free.e = 'x';
 free.B = 'b';
 free.G = 'g';
 free.D = 'd';
 free.A = 'a'; 
-free.E = 'e';  // should be different tone, this is just for testing
+free.E = 'e';  
 
 Chord Emi;
 Emi.e = 'x';
 Emi.B = 'b';
 Emi.G = 'g';
-Emi.D = 'i' ;  //!!!
-Emi.A ='j' ;	//!!!
+Emi.D = 'i' ;  
+Emi.A ='j' ;	
 Emi.E = 'e';
 
 Chord Ami;
 Ami.e = 'x';
-Ami.B = 'k';		//!!!
-Ami.G = 'l'; 		//!!!
-Ami.D = 'i';		//!!!
+Ami.B = 'k';		
+Ami.G = 'l'; 		
+Ami.D = 'i';		
 Ami.A = 'a';		
-Ami.E = 'm';		//!!! muted ,
+Ami.E = 'm';		// muted 
 
 Chord G; 
-G.e = 'n'; 	 	//!!!
+G.e = 'n'; 	 	
 G.B = 'b';
 G.G = 'g';
 G.D = 'd';
-G.A = 'j';		//!!!
-G.E = 'o'; 	//!!!
+G.A = 'j';		
+G.E = 'o'; 	
 
 
 
@@ -203,10 +211,11 @@ SOTW.A = 'g';
 SOTW.E = 'e';
 
 
-// define the object for the current chord
+// Create the object for the active chord
 Chord current;
 
 while(1) { 
+
 // User input for picking a chord
 std::cout<<"Enter the number to pick a chord: "<<std::endl;
 std::cout<<"1    Open strings"<<std::endl;
@@ -217,6 +226,8 @@ std::cout<<"5    Smoke On The Water"<<std::endl;
 std::cin>> chord;
 std::cout<<"Type in 'c' and press ENTER to return to the changing chords menu"<<std::endl;
 
+
+// Assign chord based on the user input
 if (chord == 1) { 
 current = free;
 } 
@@ -238,21 +249,20 @@ else if (chord == 5) {
 current = SOTW;
 } 
 
-
+// Setup of the user input thread
 std::thread changeChord(userInput); 
 
 while (keep_going)
 {
 
-//E is low E string
+// Threads for each string
 std::thread Estring(play,0,th,current.E);
-	//Create a thread representing string 2 (A string)
 std::thread Astring(play,1,th,current.A);
-	//Threads for other strings
 std::thread Dstring(play,2,th,current.D);
 std::thread Gstring(play,3,th,current.G);
 std::thread Bstring(play,4,th,current.B);
 std::thread estring(play,5,th,current.e);
+
 // Wait until thread terminates
 estring.join();
 Astring.join();
@@ -263,18 +273,12 @@ Estring.join();
 
 }
 
+
+// Finish the user input thread
 changeChord.join(); 
 keep_going = true;
 
-
-
-
-
-
-
 } 
-
-
 
 return 0;
 }
