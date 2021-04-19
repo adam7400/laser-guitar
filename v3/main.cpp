@@ -194,13 +194,13 @@ G.E = 'o'; 	//!!!
 
 
 
-Chord Smoke_On_The_Water;
-SOTW.e = 'x'
-SOTW.B = 'b'
-SOTW.G = 'k'
-SOTW.D = 'a'
-SOTW.A = 'g'
-SOTW.E = 'e'
+Chord SOTW;
+SOTW.e = 'x';
+SOTW.B = 'b';
+SOTW.G = 'k';
+SOTW.D = 'a';
+SOTW.A = 'g';
+SOTW.E = 'e';
 
 
 // define the object for the current chord
@@ -235,7 +235,7 @@ current = G;
 } 
 
 else if (chord == 5) { 
-current = Smoke_On_The_Water;
+current = SOTW;
 } 
 
 
