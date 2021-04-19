@@ -111,8 +111,10 @@ A Raspberry pi with the Raspbian OS is required for the following instructions.
 ## Release of Versions 
 
 <ul>
-<li>Version 1.1 (v1.1) - Single String ,		Released 11/3/21 </li>
-<li>Version 1.2 (v1.2) - Multiple Strings,		Released 16/4/21 </li>
+<li>Version 0 - Initial Setup </li>
+<li>Version 1 - Single String </li>
+<li>Version 2 - Multiple Strings </li>
+<li>Version 3 - Multiple Strings with added chords</li>
 </ul>
 
 ## Contributing to the project
