@@ -1,3 +1,7 @@
+
+
+
+
 # Space Harp
 
 <div align="center">
@@ -23,13 +27,13 @@
 		<a href="## Release of Versions "> Release of Versions </a>   
 	</li>
 	<li> 
-		<a href="## Contributing to the project ">Contributing to the project </a>  
-	</li>
-	<li> 
 		<a href="## Authors  ">Authors </a>   
 	</li>
 	<li> 
 		<a href="## Contact Us and Social Media ">Contact Us and Social Media </a>   
+	</li>
+	<li> 
+		<a href="## Contributing to the project ">Contributing to the project </a>  
 	</li>
 	<li> 
 		<a href="## License ">License </a>   
@@ -120,6 +124,30 @@ A tutorial of how to setup the Pi can be viewed on the SpaceHarp Instagram or Fa
 <li>Version 3.0 - Multiple Strings with added chords</li>
 </ul>
 
+
+
+
+## Authors 
+
+<ul>
+<li> Alex Croke </li>
+<li> Taniel Goetcherian </li>
+<li> Adam Berdis </li>
+</ul>
+
+
+
+## Contact Us and Social Media
+
+<ul>
+<li>Email -  spaceharp@outlook.com </li>
+<li>Facebook - [@SpaceharpGlasgow] - https://www.facebook.com/SpaceharpGlasgow </li>
+<li>Instagram - [@spaceharp_glasgow] -  https://www.instagram.com/spaceharp_glasgow/</li>
+<li>Twitter - [@Spaceharp1] - https://twitter.com/Spaceharp1 </li>
+</ul>
+
+
+
 ## Contributing to the project
 
 If you wish to contribute, which would be great !!! Please follow the following steps:
@@ -136,26 +164,55 @@ If you wish to contribute, which would be great !!! Please follow the following 
 If you are unsure about how to contribute, spot any problems or have suggestions on how we can improve, feel free to get in touch with us, our contact details can be found in the contact section. 
 
 
-## Authors 
-
-<ul>
-<li> Alex Croke </li>
-<li> Taniel Goetcherian </li>
-<li> Adam Berdis </li>
-</ul>
-
-## Contact Us and Social Media
-
-<ul>
-<li>Email -  spaceharp@outlook.com </li>
-<li>Facebook - [@SpaceharpGlasgow] - https://www.facebook.com/SpaceharpGlasgow </li>
-<li>Instagram - [@spaceharp_glasgow] -  https://www.instagram.com/spaceharp_glasgow/</li>
-<li>Twitter - [@Spaceharp1] - https://twitter.com/Spaceharp1 </li>
-</ul>
-
 ## License 
 
 This project will operate under the terms of GNU General Public License v3.0 . Please refer to the LICENSE.md file in the repository for further information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
